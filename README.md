@@ -3,6 +3,12 @@
 Support for ANSI colored strings in Julia. Supported in REPL/Shell
 environment for both Unix and Mac.
 
+##Install
+
+```julia
+Pkg.clone("git://github.com/Aerlinger/AnsiColor.git")
+```
+
 ##Using AnsiColor
 
 AnsiColor wraps a string in the ANSI escape sequences used for colorized
@@ -27,7 +33,6 @@ println(colorize("Hello World!", "red", background="light_yellow", mode="underli
   - "cyan"
   - "white"
   - "default"
-
   - "light_black"
   - "light_red"
   - "light_green"
