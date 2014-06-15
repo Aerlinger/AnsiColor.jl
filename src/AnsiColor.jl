@@ -31,7 +31,6 @@ module AnsiColor
     "hide"           => 8
   }
 
-  REGEXP_PATTERN     = r"\033\[([0-9]+);([0-9]+);([0-9]+)m(.+?)\033\[0m|([^\033]+)/m"
   COLOR_OFFSET       = 30
   BACKGROUND_OFFSET  = 40
 

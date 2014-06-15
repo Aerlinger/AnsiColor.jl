@@ -1,6 +1,6 @@
 # AnsiColor
 
-Support for ANSI colored strings in Julia. Supported in REPL/Shell
+Full support for ANSI colored strings in Julia. Allows formatted output in REPL/Shell
 environment for both Unix and Mac.
 
 ##Install
