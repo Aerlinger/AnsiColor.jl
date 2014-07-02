@@ -16,10 +16,13 @@ text. The style, foreground and backround colors of a string can be set.
 
 **A simple example:**
 
+Usage is similar to `Base.print_with_color` but additional arguments are
+supported.
+
 ```julia
 using AnsiColor
 
-println(colorize("Hello World!", "red", background="light_yellow", mode="underline"))
+println(colorize(:red, "Hello World!", background="light_yellow", mode="underline"))
 ```
 
 **Supported colors available in most environments:**
@@ -51,3 +54,9 @@ println(colorize("Hello World!", "red", background="light_yellow", mode="underli
   - "swap"
   - "hide"
 
+## Why use AnsiColor instead of Base.print_with_color()?
+
+There are more colors and text modes supported in AnsiColor than the
+native print_with_color method. Also, you have direct access to the
+formatted string for more flexibility, such as printing multiple colors
+per line.
