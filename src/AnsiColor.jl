@@ -34,8 +34,12 @@ module AnsiColor
   COLOR_OFFSET       = 30
   BACKGROUND_OFFSET  = 40
 
-  function colorize(str::String, color::String; background::String = "default", mode::String="default")
+  function colorize(color::String, str::String; background::String = "default", mode::String="default")
     "\033[$(MODES[mode]);$(COLOR_OFFSET + COLORS[color]);$(BACKGROUND_OFFSET + COLORS[background])m$(str)\033[0m"
+  end
+
+  function colorize(color::Symbol, str::String; background::String = "default", mode::String="default")
+    colorize(str, string(symbol), background, mode)
   end
 end
 
