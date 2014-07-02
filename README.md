@@ -54,7 +54,7 @@ println(colorize(:red, "Hello World!", background="light_yellow", mode="underlin
   - "swap"
   - "hide"
 
-## Why use AnsiColor instead of Base.print_with_color()?
+#### Why use AnsiColor instead of Base.print_with_color()?
 
 There are more colors and text modes supported in AnsiColor than the
 native print_with_color method. Also, you have direct access to the
