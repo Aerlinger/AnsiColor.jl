@@ -42,15 +42,24 @@ function colorize(color::Symbol, str::String; background::String = "default", mo
   colorize(string(color), str; background=background, mode=mode)
 end
 
-black(str::String) = colorize(:black, str)
-red(str::String) = colorize(:red, str)
-green(str::String) = colorize(:green, str)
-yellow(str::String) = colorize(:yellow, str)
-blue(str::String) = colorize(:blue, str)
-magenta(str::String) = colorize(:magenta, str)
-cyan(str::String) = colorize(:cyan, str)
-white(str::String) = colorize(:white, str)
-uncolor(str::String) = colorize(:default, str)
+black(str::String)    = colorize(:black, str)
+red(str::String)      = colorize(:red, str)
+green(str::String)    = colorize(:green, str)
+yellow(str::String)   = colorize(:yellow, str)
+blue(str::String)     = colorize(:blue, str)
+magenta(str::String)  = colorize(:magenta, str)
+cyan(str::String)     = colorize(:cyan, str)
+white(str::String)    = colorize(:white, str)
+uncolor(str::String)  = colorize(:default, str)
+
+light_black(str::String)    = colorize(:light_black, str)
+light_red(str::String)      = colorize(:light_red, str)
+light_green(str::String)    = colorize(:light_green, str)
+light_yellow(str::String)   = colorize(:light_yellow, str)
+light_blue(str::String)     = colorize(:light_blue, str)
+light_magenta(str::String)  = colorize(:light_magenta, str)
+light_cyan(str::String)     = colorize(:light_cyan, str)
+light_white(str::String)    = colorize(:light_white, str)
 
 end
 
