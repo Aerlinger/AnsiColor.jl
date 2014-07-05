@@ -1,5 +1,5 @@
 module AnsiColor
-export colorize
+export colorize, black, red, green, yellow, blue, magenta, cyan, white, uncolor
 
 COLORS = {
   "black"          => 0,
@@ -41,6 +41,16 @@ end
 function colorize(color::Symbol, str::String; background::String = "default", mode::String="default")
   colorize(string(color), str; background=background, mode=mode)
 end
+
+black(str::String) = colorize(:black, str)
+red(str::String) = colorize(:red, str)
+green(str::String) = colorize(:green, str)
+yellow(str::String) = colorize(:yellow, str)
+blue(str::String) = colorize(:blue, str)
+magenta(str::String) = colorize(:magenta, str)
+cyan(str::String) = colorize(:cyan, str)
+white(str::String) = colorize(:white, str)
+uncolor(str::String) = colorize(:default, str)
 
 end
 
