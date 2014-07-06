@@ -6,7 +6,7 @@ environment for both Unix and Mac.
 ##Install
 
 ```julia
-Pkg.clone("git://github.com/Aerlinger/AnsiColor.git")
+Pkg.add("AnsiColor")
 ```
 
 ##Using AnsiColor
@@ -25,34 +25,43 @@ using AnsiColor
 println(colorize(:red, "Hello World!", background="light_yellow", mode="underline"))
 ```
 
+There are also convenience methods with a simpler syntax:
+
+
+```julia
+using AnsiColor
+
+red("Hello World!")
+```
+
 **Supported colors available in most environments:**
 
-  - "black"
-  - "red"
-  - "green"
-  - "yellow"
-  - "blue"
-  - "magenta"
-  - "cyan"
-  - "white"
-  - "default"
-  - "light_black"
-  - "light_red"
-  - "light_green"
-  - "light_yellow"
-  - "light_blue"
-  - "light_magenta"
-  - "light_cyan"
-  - "light_white"
+  - `black`
+  - `red`
+  - `green`
+  - `yellow`
+  - `blue`
+  - `magenta`
+  - `cyan`
+  - `white`
+  - `default`
+  - `light_black`
+  - `light_red`
+  - `light_green`
+  - `light_yellow`
+  - `light_blue`
+  - `light_magenta`
+  - `light_cyan`
+  - `light_white`
 
 **Supported text modes:**
 
-  - "default"
-  - "bold"
-  - "underline"
-  - "blink"
-  - "swap"
-  - "hide"
+  - `default`
+  - `bold`
+  - `underline`
+  - `blink`
+  - `swap`
+  - `hide`
 
 #### Why use AnsiColor instead of Base.print_with_color()?
 
@@ -60,3 +69,6 @@ There are more colors and text modes supported in AnsiColor than the
 native print_with_color method. Also, you have direct access to the
 formatted string for more flexibility, such as printing multiple colors
 per line.
+
+*TODO:* Windows Support
+
