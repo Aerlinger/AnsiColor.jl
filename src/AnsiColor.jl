@@ -1,35 +1,35 @@
 module AnsiColor
 export colorize, black, red, green, yellow, blue, magenta, cyan, white, uncolor
 
-COLORS = {
-  "black"          => 0,
-  "red"            => 1,
-  "green"          => 2,
-  "yellow"         => 3,
-  "blue"           => 4,
-  "magenta"        => 5,
-  "cyan"           => 6,
-  "white"          => 7,
-  "default"        => 9,
+COLORS = Dict([
+  ("black"          , 0),
+  ("red"            , 1),
+  ("green"          , 2),
+  ("yellow"         , 3),
+  ("blue"           , 4),
+  ("magenta"        , 5),
+  ("cyan"           , 6),
+  ("white"          , 7),
+  ("default"        , 9),
 
-  "light_black"    => 60,
-  "light_red"      => 61,
-  "light_green"    => 62,
-  "light_yellow"   => 63,
-  "light_blue"     => 64,
-  "light_magenta"  => 65,
-  "light_cyan"     => 66,
-  "light_white"    => 67
-  }
+  ("light_black"    , 60),
+  ("light_red"      , 61),
+  ("light_green"    , 62),
+  ("light_yellow"   , 63),
+  ("light_blue"     , 64),
+  ("light_magenta"  , 65),
+  ("light_cyan"     , 66),
+  ("light_white"    , 67)
+  ])
 
-MODES = {
-  "default"        => 0,
-  "bold"           => 1,
-  "underline"      => 4,
-  "blink"          => 5,
-  "swap"           => 7,
-  "hide"           => 8
-  }
+MODES = Dict([
+  ("default"        , 0),
+  ("bold"           , 1),
+  ("underline"      , 4),
+  ("blink"          , 5),
+  ("swap"           , 7),
+  ("hide"           , 8)
+  ])
 
 COLOR_OFFSET       = 30
 BACKGROUND_OFFSET  = 40
