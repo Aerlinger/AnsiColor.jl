@@ -3,13 +3,13 @@
 Full support for ANSI colored strings in Julia. Allows formatted output in REPL/Shell
 environment for both Unix and Mac.
 
-##Install
+## Install
 
 ```julia
-Pkg.add("AnsiColor")
+import Pkg; Pkg.add("AnsiColor")
 ```
 
-##Using AnsiColor
+## Using AnsiColor
 
 AnsiColor wraps a string in the ANSI escape sequences used for colorized
 text. The style, foreground and backround colors of a string can be set. 
