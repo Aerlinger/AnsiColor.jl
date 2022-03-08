@@ -6,7 +6,7 @@ environment for both Unix and Mac.
 ## Install
 
 ```julia
-Pkg.add("AnsiColor")
+import Pkg; Pkg.add("AnsiColor")
 ```
 
 ## Using AnsiColor
